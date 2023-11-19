@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(uuid())
+  name String
+  email String
+  password String
+  contato String
+  carteira Wallet @relation(fields: [wallet_id], references: [id])
+  wallet_id String
+  owner Boolean @default(false)
+  employee Boolean @default(false)
+  created_at DateTime @default(now())   
+  updated_at DateTime @default(now())
+
+  @@map("users")
+} 
+
+model Wallet {
+  id String @id @default(uuid())
+  saldo Float @default(0)
+  transactions WalletTransaction[]
+
+  users User[] 
+  @@map("carteira")
+}
+
+model WalletTransaction {
+  id String @id @default(uuid())
+  amount Float
+  type String @default("entrada")
+  created_at DateTime @default(now())
+  wallet Wallet @relation(fields: [wallet_id], references: [id])
+  
+  @@map("historico")
+  wallet_id String @unique
+}
+
+model Services {
+  id String @id @default(uuid())
+  name String
+  price Float
+  material String?
+  status Boolean @default(true)
+  created_at DateTime @default(now())   
+  updated_at DateTime @default(now())
+  items Item[]
+  @@map("services")
+}
+
+model Order {
+  id String @id @default(uuid())
+  name String
+  services Item[]
+  valor Float
+  profissional String
+  horario DateTime @default(now())
+  data DateTime @default(now())
+
+  @@map("order")
+}
+
+model Item {
+  id String @id @default(uuid())
+  valor Float
+
+  created_at DateTime @default(now())   
+  updated_at DateTime @default(now())
+
+  order Order @relation(fields: [order_id], references: [id])
+  service Services @relation(fields: [service_id], references: [id])
+
+  @@map("item")
+  order_id String
+  service_id String
+}
+
+model Employee {
+  id String @id @default(uuid())
+  name String
+  email String
+  password String
+  contato String
+  percentage Float?
+  created_at DateTime @default(now())   
+  updated_at DateTime @default(now())
+
+  @@map("employee")
+}
