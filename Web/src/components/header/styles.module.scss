@@ -1,0 +1,93 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-900);
+    position: fixed;
+    height: 100vh;
+    width: 230px;
+    overflow: auto;
+
+    div {
+        background: url("../../assets/barberBanner.png");
+        background-color: var(--dark-900);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+    }
+ 
+    div {
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: drop-shadow(3px 3px 7px #121212);
+        
+        -webkit-filter: drop-shadow(3px 3px 7px #121212);
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(3px 3px 11px #a4a4a4);
+        -webkit-filter: drop-shadow(3px 3px 11px #a4a4a4);
+    }
+
+    a {
+        display: block;
+        padding: 5px 20px;
+        margin: 16px;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        display: flex;
+        background-color: var(--gray-600);
+        flex-direction: row;
+        align-items: center;
+        // justify-content: center;
+        transition: ease-in-out 0.4s;
+
+        &:hover {
+            background-color: var(--gray-300);
+        }
+
+        &.active {
+            background-color: var(--gray-100);
+        }
+    }
+
+    svg {
+        margin-right: 0.5rem;
+    }
+}
+
+.content {
+    margin-left: 230px;
+    padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px){
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding:  0 20px 0 20px;
+
+        div {
+            display: none;
+        }
+
+        a {
+            float: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .sidebar {
+        padding: 0;
+    }
+}
