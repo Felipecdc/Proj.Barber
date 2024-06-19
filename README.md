@@ -23,7 +23,7 @@
 # Demonstração
 
 <div align="flex-start">
-  <img src="https://github.com/Felipecdc/Proj.Barber/blob/main/202406191824_3_.gif" width="450">
+  <img src="https://github.com/Felipecdc/Proj.Barber/blob/main/202406191824_2_.gif" width="450">
 </div>
 
 ---
@@ -45,6 +45,10 @@
 ![SASS](https://img.shields.io/badge/SASS-CC6699?style=flat&logo=sass&logoColor=white)
 ![React Icons](https://img.shields.io/badge/React_Icons-00D8FF?style=flat&logo=react&logoColor=white)
 ![React Toastify](https://img.shields.io/badge/React_Toastify-FFC107?style=flat&logo=react&logoColor=white)
+
+<div align="center">
+  <img src="https://github.com/Felipecdc/Proj.Barber/blob/main/202406191824_3_.gif" width="100%">
+</div>
 
 ---
 
