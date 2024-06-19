@@ -45,6 +45,9 @@
 ![SASS](https://img.shields.io/badge/SASS-CC6699?style=flat&logo=sass&logoColor=white)
 ![React Icons](https://img.shields.io/badge/React_Icons-00D8FF?style=flat&logo=react&logoColor=white)
 ![React Toastify](https://img.shields.io/badge/React_Toastify-FFC107?style=flat&logo=react&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)
+
+# Demonstração
 
 <div align="center">
   <img src="https://github.com/Felipecdc/Proj.Barber/blob/main/202406191824_3_.gif" width="100%">
@@ -69,6 +72,5 @@
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
 ![bcryptjs](https://img.shields.io/badge/bcryptjs-2A6976?style=flat)
 ![JWT (JSON Web Tokens)](https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens)
-![Multer](https://img.shields.io/badge/Multer-FF5722?style=flat&logo=node.js&logoColor=white)
 ![Cors](https://img.shields.io/badge/Cors-FFCA28?style=flat&logo=cors&logoColor=white)
 ![dotenv](https://img.shields.io/badge/dotenv-141414?style=flat&logo=dotenv&logoColor=white)
