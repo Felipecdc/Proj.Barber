@@ -20,6 +20,12 @@
 ![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=flat&logo=styled-components&logoColor=white)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)
 
+# Demonstração
+
+<div align="flex-start">
+  <img src="https://github.com/Felipecdc/Proj.Barber/blob/main/202406191824_3_.gif" width="450">
+</div>
+
 ---
 
 ## Web
